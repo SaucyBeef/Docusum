@@ -1,5 +1,4 @@
--------------------
-Docusum v0.1.3-beta
+Docusum v0.1.4-beta
 -------------------
 
 why you lookin here 🤨
