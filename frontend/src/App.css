@@ -1,0 +1,314 @@
+.splash,
+.layout {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 32px 24px 40px;
+}
+
+.splash-main {
+  max-width: 520px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.subtitle {
+  margin: 12px 0 24px;
+  color: #475467;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.topbar p {
+  margin: 8px 0 0;
+  color: #475467;
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.auth-toggle {
+  display: inline-flex;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.toggle-btn {
+  border: 0;
+  background: #f8f9fb;
+  color: #344054;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.toggle-btn.active {
+  background: #1d4ed8;
+  color: #ffffff;
+}
+
+.auth-form {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+  color: #344054;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 10px 12px;
+  color: #101828;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.primary-btn,
+.ghost-btn,
+.danger-btn {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 10px 14px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background: #1d4ed8;
+  color: #ffffff;
+}
+
+.ghost-btn {
+  background: #ffffff;
+  border-color: #d0d5dd;
+  color: #344054;
+}
+
+.danger-btn {
+  background: #b42318;
+  color: #ffffff;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.service-controls {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-bottom: 20px;
+}
+
+.file-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.query-form {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.result-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1.15fr 1fr;
+}
+
+.result-panel,
+.loading-panel,
+.management-panel {
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 16px;
+}
+
+.result-panel p {
+  margin: 10px 0 0;
+}
+
+.context-list,
+.history-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.context-list li,
+.history-list li {
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 12px;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.history-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.history-question {
+  margin: 0;
+  font-weight: 600;
+}
+
+.history-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.account-menu-wrap {
+  position: relative;
+}
+
+.menu-panel {
+  position: absolute;
+  top: 46px;
+  right: 0;
+  min-width: 180px;
+  background: #ffffff;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  padding: 6px;
+  display: grid;
+  z-index: 5;
+}
+
+.menu-panel button {
+  border: 0;
+  background: transparent;
+  text-align: left;
+  padding: 9px 10px;
+  border-radius: 6px;
+  color: #101828;
+  cursor: pointer;
+}
+
+.menu-panel button:hover {
+  background: #f2f4f7;
+}
+
+.confirm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgb(16 24 40 / 42%);
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.confirm-panel {
+  width: min(420px, 100%);
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 18px;
+}
+
+.confirm-panel p {
+  margin: 10px 0 0;
+  color: #475467;
+}
+
+.confirm-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.error-text,
+.ok-text,
+.muted,
+.meta {
+  margin: 8px 0;
+}
+
+.error-text {
+  color: #b42318;
+}
+
+.ok-text {
+  color: #067647;
+}
+
+.muted,
+.meta {
+  color: #667085;
+}
+
+.meta {
+  font-size: 13px;
+}
+
+@media (max-width: 960px) {
+  .service-controls,
+  .result-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar,
+  .history-list li {
+    flex-direction: column;
+  }
+
+  .topbar-actions {
+    width: 100%;
+  }
+
+  .topbar-actions > button,
+  .account-menu-wrap,
+  .account-btn {
+    width: 100%;
+  }
+
+  .menu-panel {
+    top: 48px;
+    left: 0;
+    right: auto;
+  }
+}
